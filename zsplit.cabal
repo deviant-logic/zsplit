@@ -1,0 +1,26 @@
+name:                zsplit
+version:             0.1
+license:             BSD3
+author:              Alec Heller
+maintainer:          Alec Heller <alec@deviant-logic.net>
+category:            Application
+build-type:          Simple
+cabal-version:       >=1.10
+homepage:            http://github.com/deviant-logic/zsplit
+bug-reports:         http://github.com/deviant-logic/zsplit/issues
+synopsis:            Like split(1) but with gzipping
+description:         Like split(1) but with gzipping
+
+source-repository head
+  type:     git
+  location: git://github.com/deviant-logic/zsplit.git
+
+
+executable zsplit
+  build-depends:       base >=4.6 && <= 4.7,
+                       bytestring,
+                       zlib
+  hs-source-dirs:      src
+  main-is:             zsplit.hs
+  ghc-options:         -rtsopts
+  default-language:    Haskell2010

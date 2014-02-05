@@ -1,0 +1,3 @@
+# zsplit
+
+It's supposed to work like `split(1)`, but with gzip files.
